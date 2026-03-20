@@ -132,7 +132,11 @@ function TicTacToe({ onExit }) {
   };
 
   const startGame = () => {
-    if (player1.trim() && player2.trim()) setNamesLocked(true);
+    if (!player1.trim() || !player2.trim()) {
+      alert("Please enter your name first (both players) before starting.");
+      return;
+    }
+    setNamesLocked(true);
   };
 
   const handleExit = () => {

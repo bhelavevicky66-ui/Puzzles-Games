@@ -20,24 +20,6 @@ function Header() {
             </span>
           </Link> 
 
-          {/* Navigation Links */}
-          <div className="flex items-center space-x-4 sm:space-x-6">
-            <Link
-              to="/"
-              className="relative text-sm sm:text-base font-extrabold bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-500 bg-clip-text text-transparent tracking-wide group"
-            >
-              Play
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
-            </Link>
-
-            <Link
-              to="/leaderboard"
-              className="relative text-sm sm:text-base font-extrabold bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-500 bg-clip-text text-transparent tracking-wide group"
-            >
-              Leaderboard
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-blue-400 group-hover:w-full transition-all duration-300"></span>
-            </Link>
-          </div>
         </div>
       </nav>
     </header>
